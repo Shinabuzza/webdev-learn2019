@@ -8,10 +8,10 @@ height: 600px;
 backface-visibility: initial;
 border-radius: 5px;
 }
-.media_content {
+.media-content {
 overflow: hidden;
 }
-.title.no_padding {
+.title.no-padding {
 margin-bottom: 0 !important;
 }
 #flow span {
@@ -24,7 +24,7 @@ left: -50vw;
 border-radius: 90vw;
 opacity: 0.6;
 }
-.flow_1 {
+.flow-1 {
 background: #3281ff;
 -webkit-animation: rotating 20s linear infinite;
 -moz-animation: rotating 20s linear infinite;
@@ -33,7 +33,7 @@ background: #3281ff;
 animation: rotating 20s linear infinite;
 display: none;
 }
-.flow_2 {
+.flow-2 {
 background: #f442ee;
 position: absolute;
 -webkit-animation: rotating 15s linear infinite;
@@ -42,7 +42,7 @@ position: absolute;
 -o-animation: rotating 15s linear infinite;
 animation: rotating 15s linear infinite;
 }
-.flow_3 {
+.flow-3 {
 background: #42eef4;
 position: absolute;
 -webkit-animation: rotating 7s linear infinite;
