@@ -1,11 +1,17 @@
-// The following code is based off a toggle menu by @Bradcomp
-// source: https://gist.github.com/Bradcomp/a9ef2ef322a8e8017443b626208999c1
-(function() {
-    var burger = document.querySelector('.burger');
-    var menu = document.querySelector('#'+burger.dataset.target);
-    burger.addEventListener('click', function() {
-        burger.classList.toggle('is-active');
-        menu.classList.toggle('is-active');
-    
-    });
-})();
+function cardSearch() {
+  var searchValue = document.getElementById("search").value;
+  var cardsItem = document.getElementsByClassName("column");
+  var cardsContent = document.getElementsByClassName("content");
+  var cardLength = cardsContent.length;
+
+  for (var i = 0; i < cardLength; i++) {
+    var cardText = cardsContent[i].innerText.toLowerCase();
+    var searchValue = searchValue.toLowerCase();
+
+    if (cardText.indexOf(searchValue) !== -1) {
+      cardsItem[i].style.display = "block";
+    } else {
+      cardsItem[i].style.display = "none";
+    }
+  }
+}
