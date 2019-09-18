@@ -29,10 +29,18 @@ window.onload = function () {
     check.onclick = function () {
       label.classList.toggle('labeled');
     };
-
+    var checkAll = document.getElementById('check-all');
+    checkAll.onclick=function(){
+      while(){
+     label.classList.toggle('labeled')
+      }
+    };
+    
     // TODO: delete task event
     icon.onclick = function () {
+     newTask.parentNode.removeChild(newTask);
       console.log('delete');
+      
     };
   };
 
