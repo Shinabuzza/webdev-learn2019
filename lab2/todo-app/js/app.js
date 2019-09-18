@@ -26,14 +26,8 @@ window.onload = function () {
 
     // complete task
     // TODO: labeled - not valid name for CSS and context
-    check.onclick = function () {
-      label.classList.toggle('labeled');
-    };
-    var checkAll = document.getElementById('check-all');
-    checkAll.onclick=function(){
-      while(){
-     label.classList.toggle('labeled')
-      }
+    check.onchange = function () {
+      label.classList.toggle('completed');
     };
     
     // TODO: delete task event
@@ -45,12 +39,19 @@ window.onload = function () {
   };
 
   // TODO: complete all handler here
-  /*
+  
     var completeAll = document.getElementById('complete-all');
-    completeAll.onclick = function () {
+    completeAll.onchange = function ()
+     {
+      var task = document.getElementsByClassName('new');
+      for (var i = 0; i < task.length; i++) {
+        task[i].children[0].classList.toggle('completed');
+      }
+     
+
       console.log('complete all');
     };
-  */
+  
 
 
   // TODO: filter tasks
