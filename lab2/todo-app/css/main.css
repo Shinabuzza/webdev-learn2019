@@ -44,3 +44,6 @@ input {
 	right: 10px;
 	top: 40%;
 }
+.deleted{
+	display: none;
+}

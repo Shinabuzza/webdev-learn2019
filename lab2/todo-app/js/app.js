@@ -32,7 +32,8 @@ window.onload = function () {
     
     // TODO: delete task event
     icon.onclick = function () {
-     newTask.parentNode.removeChild(newTask);
+    // newTask.parentNode.removeChild(newTask);
+     event.currentTarget.parentElement.classList.add('deleted');
       console.log('delete');
       
     };
@@ -55,20 +56,46 @@ window.onload = function () {
 
 
   // TODO: filter tasks
-  /*
-    var filterShowAll = document.getElementById('filter-show-all');
-    filterShowAll.onclick = function () {
-      console.log('show all');
-    };
+  var filterShowAll = document.getElementById('filter-show-all');
+  filterShowAll.onclick = function() {
+    var taskList = document.querySelectorAll('.new');
 
-    var filterShowCompleted = document.getElementById('filter-show-completed');
-    filterShowCompleted.onclick = function () {
-      console.log('show completed');
-    };
+    for (let task of taskList) {
+      if (task.classList.contains('deleted')) {
+        task.style.display = 'none';
+      }
 
-    var filterShowCompleted = document.getElementById('filter-show-removed');
-    filterShowRemoved.onclick = function () {
-      console.log('show removed');
-    };
-  */
+      task.style.display = '';
+    }
+  }
+};
+
+var filterShowCompleted = document.getElementById('filter-show-completed');
+filterShowCompleted.onclick = function() {
+  var taskList = document.querySelectorAll('.new');
+
+  for (let task of taskList) {
+
+    if (task.classList.contains('completed')) {
+      if (!task.classList.contains('deleted')) {
+        task.style.display = 'block';
+      }
+    } else {
+      task.style.display = 'none';
+    }
+  }
+};
+
+var filterShowRemoved = document.getElementById('filter-show-removed');
+filterShowRemoved.onclick = function() {
+  var taskList = document.querySelectorAll('.new');
+
+  for (let task of taskList) {
+    if (task.classList.contains('deleted')) {
+      task.style.display = 'block';
+      task.classList.remove('completed');
+    } else {
+      task.style.display = 'none';
+    }
+  }
 }
