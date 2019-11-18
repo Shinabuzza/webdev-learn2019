@@ -1,0 +1,88 @@
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+    padding: 70px 25px;
+    background: #1abc9c;
+    text-align: center;
+}
+
+
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 0px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 0px 0;
+    background: white;
+    margin: 0px;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-top:0px;
+    margin-bottom: 1px;
+    font-size:12px;
+    color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .weekend {
+    padding:5px;
+    margin: 0px;
+    text-align: center;
+    background: #1abc9c;
+}
+
+.days li .off  {
+    margin:0px,0px,0px;
+    padding:5px;
+    background: #d3d3d3;
+}
+.days li .weekend-off{
+    background: #419584;
+    padding:5px;
+    text-align: center;
+
+}
