@@ -107,22 +107,21 @@ html {
 .dark .month ul {
   color: white;
 }
-.dark .days  {
+.dark .days {
   background: #393939;
   color: white;
 }
-.dark  .weekdays {
+.dark .weekdays {
   background: #393939;
 }
-.dark li .weekend{
-   background: #007862;
-
+.dark li .weekend {
+  background: #007862;
 }
-.dark li .weekend-off{
-    background: #00604e;
+.dark li .weekend-off {
+  background: #00604e;
 }
-.dark li .off{
-    background: #878787;
+.dark li .off {
+  background: #878787;
 }
 
 .dark li {
@@ -160,5 +159,17 @@ html {
 .theme-switch input:checked ~ .checkmark {
   background-color: #2196f3;
   border: 1px solid #2196f3;
+  color: white;
+}
+.today {
+  background: #e67373;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+.dark .today {
+  background: #e67373;
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: white;
 }
