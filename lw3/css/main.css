@@ -162,3 +162,15 @@ html {
   border: 1px solid #2196f3;
   color: white;
 }
+.today {
+    background: #E67373;
+    padding-top:5px;
+    padding-bottom: 5px;
+  color: white;
+  }
+.dark .today{
+    background: #E67373;
+    padding-top:5px;
+    padding-bottom: 5px;
+  color: white;
+}
